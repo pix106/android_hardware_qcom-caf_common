@@ -265,7 +265,7 @@ ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FA
 endif
 
 # Enable master side content protection on UM platforms that support it
-MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY)
+MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660 $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_LEGACY_FAMILY) $(UM_4_19_FAMILY)
 ifneq ($(filter $(MASTER_SIDE_CP_TARGET_LIST),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_master_side_cp := true
 endif
